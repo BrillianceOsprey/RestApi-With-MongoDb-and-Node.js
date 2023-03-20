@@ -1,0 +1,36 @@
+GET  http://localhost:3000/products
+
+### crate a product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "iPhone 11",
+    "price": 699
+}
+
+### get a product by id
+GET   http://localhost:3000/products/id
+
+### update a product by id
+PATCH   http://localhost:3000/products/id
+### delete a product by id
+DELETE   http://localhost:3000/products/id
+
+### 
+GET http://localhost:3000/abc_xyz
+
+###
+GET  http://localhost:3000/test?name=iMac&price=2399
+
+###
+GET  http://localhost:3000/test/365469432121/iMac
+
+###
+
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=499
+ 

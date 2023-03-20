@@ -1,0 +1,15 @@
+{
+  "name": "restapi_test",
+  "version": "1.0.0",
+  "description": "MS Test",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "MS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  }
+}
