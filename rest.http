@@ -1,4 +1,5 @@
-GET  http://localhost:3000/products
+// get a list of all product
+GET http://localhost:3000/products
 
 ### crate a product
 
@@ -6,19 +7,25 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "iPhone 11",
-    "price": 699
+    "name": "Apple Watch"
 }
 
 ### get a product by id
-GET   http://localhost:3000/products/id
+# GET   http://localhost:3000/products/id
+GET   http://localhost:3000/products/6419185c22292fb40175c14
 
 ### update a product by id
-PATCH   http://localhost:3000/products/id
-### delete a product by id
-DELETE   http://localhost:3000/products/id
+PATCH   http://localhost:3000/products/6419188222292fb40175c152
+Content-Type: application/json
 
-### 
+{
+  "price": 456123
+}
+
+### delete a product by id
+DELETE   http://localhost:3000/products/6419185c22292fb40175c14
+
+### 404 not found
 GET http://localhost:3000/abc_xyz
 
 ###
